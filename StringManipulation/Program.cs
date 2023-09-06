@@ -1,9 +1,11 @@
 ﻿
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.Extensions.Logging;
 using StringManipulation;
 
+[ExcludeFromCodeCoverage]
 internal class Program
-{
+{    
     private static void Main(string[] args)
     {
         var loggerFactory = LoggerFactory.Create(builder =>
